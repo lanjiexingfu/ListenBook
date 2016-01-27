@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_banner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.lib.ext.widget.focuspicture.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/auto_scroll_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        android:fadingEdge="none"
+        android:spacing="1dip"
+        android:unselectedAlpha="1" />
+
+    <LinearLayout
+        android:id="@+id/gallery_point_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/auto_scroll_view_pager"
+        android:background="@drawable/bg_main_banner_point"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="6dp" />
+</RelativeLayout>

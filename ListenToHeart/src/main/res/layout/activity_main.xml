@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_blank"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.lib.custom.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/main_center_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"></FrameLayout>
+
+    <View style="@style/horizontal_divider" />
+
+    <RadioGroup
+        android:id="@+id/bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <com.listen.widget.CustomRadioButton
+            android:id="@+id/rl_listen_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textColor="@color/index_bottom_tab_font_selector"
+            android:textSize="@dimen/text_size_ss"
+            custom:custom_drawableTop="@drawable/index_bottom_tab_listen_bar_pic_selector"
+            custom:custom_drawableTopHeight="10dp"
+            custom:custom_drawableTopWith="10dp" />
+
+        <com.listen.widget.CustomRadioButton
+            android:id="@+id/rl_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textColor="@color/index_bottom_tab_font_selector"
+            android:textSize="@dimen/text_size_ss"
+            custom:custom_drawableTop="@drawable/index_bottom_tab_mime_pic_selector"
+            custom:custom_drawableTopHeight="10dp"
+            custom:custom_drawableTopWith="10dp" />
+
+        <com.listen.widget.CustomRadioButton
+            android:id="@+id/rl_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textColor="@color/index_bottom_tab_font_selector"
+            android:textSize="@dimen/text_size_ss"
+            custom:custom_drawableTop="@drawable/index_bottom_tab_discover_pic_selector"
+            custom:custom_drawableTopHeight="10dp"
+            custom:custom_drawableTopWith="10dp" />
+
+        <com.listen.widget.CustomRadioButton
+            android:id="@+id/rl_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:textColor="@color/index_bottom_tab_font_selector"
+            android:textSize="@dimen/text_size_ss"
+            custom:custom_drawableTop="@drawable/index_bottom_tab_account_pic_selector"
+            custom:custom_drawableTopHeight="10dp"
+            custom:custom_drawableTopWith="10dp" />
+    </RadioGroup>
+
+</LinearLayout>

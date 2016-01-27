@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="D6_Font">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff727475</item>
+        <item name="android:shadowColor">#ccffffff</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+    <style name="A1_Font">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/semi_transparent</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+    <style name="A2_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/semi_transparent</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+    <style name="A3_Font">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/semi_transparent</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+    <style name="A4_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/semi_transparent</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+    <style name="A5_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="A6_Font">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/semi_transparent</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+
+    <style name="A7_Font">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="A8_Font">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff0e0e0e</item>
+        <item name="android:shadowColor">#88ffffff</item>
+        <item name="android:shadowRadius">5.0</item>
+    </style>
+
+</resources>

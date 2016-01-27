@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--输入编辑控件代理-->
+    <item name="input_edit_layout" type="id"/>
+    <item name="input_edit" type="id"/>
+    <item name="send_btn" type="id"/>
+
+    <!--字母导航代理-->
+    <item name="letter_view" type="id"/>
+
+    <!--标题栏代理-->
+    <item name="title_bar_layout" type="id"/>
+    <item name="title_bar_left_btn" type="id"/>
+    <item name="title_bar_left_text" type="id"/>
+    <item name="title_bar_left_point" type="id"/>
+    <item name="title_bar_left_layout" type="id"/>
+    <item name="title_bar_title_show" type="id"/>
+    <item name="title_bar_right_btn" type="id"/>
+    <item name="title_bar_right_text" type="id"/>
+    <item name="title_bar_right_point" type="id"/>
+    <item name="title_bar_right_layout" type="id"/>
+
+</resources>

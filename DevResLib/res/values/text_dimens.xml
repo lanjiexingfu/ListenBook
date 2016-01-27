@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--text size-->
+    <dimen name="text_size_ss">10dp</dimen>
+    <dimen name="text_size_s">12dp</dimen>
+    <dimen name="text_size_m">14dp</dimen>
+    <!--正文-->
+    <dimen name="text_size_l">16dp</dimen>
+    <!--副标题、按钮-->
+    <dimen name="text_size_xl">18dp</dimen>
+    <!--标题-->
+    <dimen name="text_size_xxl">21dp</dimen>
+    <!--超大-->
+    <dimen name="lib_text_size_sl">30sp</dimen>
+
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_width">300dp</dimen>
+
+</resources>

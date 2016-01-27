@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:lib="http://schemas.android.com/apk/res-auto">
+
+    <item android:drawable="@drawable/bg_btn_calendar_activated"
+          android:state_pressed="true"
+          android:state_checked="true"
+          lib:state_current="true"/>
+
+    <item android:drawable="@drawable/bg_btn_calendar_activated"
+          android:state_checked="true"
+          lib:state_current="true"/>
+
+    <item android:drawable="@drawable/bg_btn_calendar_pressed"
+          android:state_pressed="true"
+          lib:state_current="true"/>
+
+    <item android:drawable="@drawable/bg_btn_calendar_pressed"
+          android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/bg_btn_calendar_activated"
+          android:state_checked="true"/>
+
+    <item android:drawable="@drawable/bg_btn_calendar_current"
+          lib:state_current="true"/>
+
+    <item android:drawable="@drawable/transparent"/>
+
+</selector><!-- From: file:/D:/ListenBook/DevelopLib/res/drawable/bg_btn_calendar.xml --><!-- From: file:/D:/ListenBook/DevelopLib/build/intermediates/bundles/debug/res/drawable/bg_btn_calendar.xml -->

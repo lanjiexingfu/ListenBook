@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_folder_name">weDrive</string>
+    <string name="db_name">weDrive.db</string>
+    <string name="db_version">4</string>
+
+    <string name="api_app_type">1</string>
+
+</resources>

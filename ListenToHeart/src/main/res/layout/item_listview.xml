@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="8dp"
+                android:background="#f39c11" />
+
+            <TextView
+                android:id="@+id/book_category_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_m" />
+
+            <TextView
+                android:id="@+id/book_category_more"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:background="@drawable/more_bg_shape"
+                android:gravity="center"
+                android:text="更多"
+                android:clickable="true"
+                android:textColor="@color/text_super_light"
+                android:textSize="@dimen/text_size_s" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/horizon_listview_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.listen.widget.HorizontalListView
+                android:id="@+id/horizon_listview"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                ></com.listen.widget.HorizontalListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

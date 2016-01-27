@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:lib="http://schemas.android.com/apk/res-auto">
+
+<item android:color="@android:color/white"
+    android:state_checked="true"/>
+
+<item android:color="@android:color/white"
+    android:state_pressed="true"/>
+
+<item android:color="@android:color/white"
+    lib:state_current="true"/>
+
+<item android:color="@color/text_light"
+    android:state_enabled="false"/>
+
+<item android:color="@color/text_black"/>
+
+</selector><!-- From: file:/D:/ListenBook/DevelopLib/res/color/text_calendar.xml --><!-- From: file:/D:/ListenBook/DevelopLib/build/intermediates/bundles/debug/res/color/text_calendar.xml -->

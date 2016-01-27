@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!--主页banner导航块背景蒙层-->
+     <color name="main_banner_point_end_color">#40000000</color>
+
+     <color name="item_back_press">#fff</color>
+
+     <!--首页底部tab文字颜色-->
+     <color name="tab_font_selected">#f39f19</color>
+     <color name="tab_font_no_selected">#626262</color>
+
+</resources>

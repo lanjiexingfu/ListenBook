@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <!-- 紫色 -->
+    <color name="purple">#ff937bac</color>
+    <!-- 灰色 -->
+    <color name="gray">#ffc0c0c0</color>
+    <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 黑色 -->
+    <color name="black">#ff000000</color>
+    <!-- 浅黑色 -->
+    <color name="light_black">#d0000000</color>
+    <!-- 黄色 -->
+    <color name="yellow">#ffffff00</color>
+    <!-- 红色 -->
+    <color name="red">#ffff0000</color>
+    <!-- 蓝色 -->
+    <color name="blue">#5E82D8</color>
+
+
+    <color name="black1">#525252</color>
+    <color name="black2">#404040</color>
+    <color name="black3">#333333</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_black">#6B6B75</color>
+    <color name="text_gray">#88898A</color>
+    <color name="text_blue">#489BF7</color>
+    <color name="text_red">#FF0000</color>
+    <color name="text_red_light">#fe7070</color>
+
+    <color name="text_greed">#6BA156</color>
+
+    <color name="divider_color_light">#ebebeb</color>
+    <color name="white_light_bg">#f1f1f1</color>
+    <!--分割线-->
+    <color name="line_gray_color">#e2e2e2</color>
+    <!--分类列表分割线色值-->
+    <color name="grid_line_gray_color">#e2e2e2</color>
+
+    <!--带编辑框的对话框中的分割线色值-->
+    <color name="dialog_with_edittext">#ccc</color>
+
+    <!-- 透明 -->
+    <drawable name="transparent">#00000000</drawable>
+
+    <drawable name="gray_line">@color/line_gray_color</drawable>
+
+    <!--title背景色-->
+    <color name="title_green_bg">#25bfa0</color>
+
+</resources>

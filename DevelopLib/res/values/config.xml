@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_folder_name" type="string"/>
+
+    <!--数据库-->
+    <item name="db_name" type="string"/>
+    <item name="db_version" type="string"/>
+
+</resources>

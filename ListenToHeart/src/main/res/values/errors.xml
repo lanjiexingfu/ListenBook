@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="receive_error_code">
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>201</item>
+        <item>10001</item>
+        <item>10010</item>
+        <item>202</item>
+        <item>203</item>
+        <item>206</item>
+    </string-array>
+
+    <string-array name="receive_error_msg">
+        <item>调用成功</item>
+        <item>调用失败</item>
+        <item>参数错误</item>
+        <item>用户不存在</item>
+        <item>密码错误</item>
+        <item>验证码错误</item>
+        <item>验证码超时</item>
+        <item>学时不足</item>
+        <item>Access_token不合法的凭证</item>
+        <item>服务器繁忙</item>
+        <item>学员已签退</item>
+        <item>学员已练车</item>
+        <item>教练分组不存在</item>
+    </string-array>
+
+    <string-array name="push_error_code">
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>2</item>
+        <item>7</item>
+        <item>14</item>
+        <item>15</item>
+        <item>19</item>
+        <item>20</item>
+        <item>40</item>
+        <item>48</item>
+        <item>63</item>
+        <item>71</item>
+        <item>73</item>
+        <item>76</item>
+        <item>78</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="push_error_msg">
+        <item>调用成功</item>
+        <item>参数错误</item>
+        <item>请求时间戳不在有效期内</item>
+        <item>sign校验无效，检查Access ID和Secret Key（注意不是Access Key）</item>
+        <item>参数错误</item>
+        <item>别名/账号绑定的终端数满了（10个）</item>
+        <item>收到非法token，例如ios终端没能拿到正确的token</item>
+        <item>信鸽逻辑服务器繁忙</item>
+        <item>操作时序错误 例如进行tag操作前未获取到deviceToken 没有获取到deviceToken的原因: 1.没有注册信鸽或者苹果推送。 2.provisioning profile制作不正确。</item>
+        <item>鉴权错误，可能是由于Access ID和Access Key不匹配</item>
+        <item>推送的token没有在信鸽中注册，或者推送的账号没有绑定token</item>
+        <item>推送的账号没有在信鸽中注册</item>
+        <item>标签系统忙</item>
+        <item>APNS服务器繁忙</item>
+        <item>消息字符数超限</item>
+        <item>请求过于频繁，请稍后再试</item>
+        <item>循环任务参数错误</item>
+        <item>APNS证书错误。请重新提交正确的证书</item>
+    </string-array>
+
+</resources>

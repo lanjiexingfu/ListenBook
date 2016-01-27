@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:orientation="horizontal"
+        android:background="#393939">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mic"/>
+        <ImageView 
+            android:id="@+id/micRunIv"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mic_run"/>
+    </LinearLayout>
+    
+
+</LinearLayout>
+<!-- From: file:/D:/ListenBook/DevelopLib/res/layout/dialog_void.xml --><!-- From: file:/D:/ListenBook/DevelopLib/build/intermediates/bundles/debug/res/layout/dialog_void.xml -->

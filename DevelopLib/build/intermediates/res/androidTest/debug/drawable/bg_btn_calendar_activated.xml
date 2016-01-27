@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/blue_dark" />
+
+</shape><!-- From: file:/D:/ListenBook/DevelopLib/res/drawable/bg_btn_calendar_activated.xml --><!-- From: file:/D:/ListenBook/DevelopLib/build/intermediates/bundles/debug/res/drawable/bg_btn_calendar_activated.xml -->

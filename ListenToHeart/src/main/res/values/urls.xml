@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_id">studentId</string>
+
+    <!--&lt;!&ndash;正式服务器接口地址&ndash;&gt;-->
+    <!--<string name="url_server">http://211.149.209.126/schoolServer/weSchoolAction!%s</string>-->
+    <!--&lt;!&ndash;正式服务器后台资源地址&ndash;&gt;-->
+    <!--<string name="url_server_res">http://211.149.209.126/weschool/%s</string>-->
+    <string name="url_server_res">http://www.vjiapei.com/weschool/%s</string>
+
+    <!--测试服务器接口地址-->
+    <!--<string name="url_server">http://120.26.209.173/schoolServer/weSchoolAction!%s</string>-->
+    <string name="url_server">http://www.vjiapei.com/schoolServer/weSchoolAction!%s</string>
+    <!--测试服务器后台资源地址-->
+    <!--<string name="url_server_res">http://120.26.209.173/weschool/%s</string>-->
+
+    <!--&lt;!&ndash;本地接口地址&ndash;&gt;-->
+    <!--<string name="url_server">http://192.168.1.137:8888/schoolServer/weSchoolAction!%s</string>-->
+    <!--&lt;!&ndash;本地后台资源地址&ndash;&gt;-->
+    <!--<string name="url_server_res">http://192.168.1.137:8888/weschool/%s</string>-->
+
+
+    <string name="url_login">stuLogin.htm</string>
+    <string name="url_modify_pwd">updateStuPwd.htm</string>
+    <string name="url_reset_pwd">stuResetPwd.htm</string>
+    <!--测试服务器接口地址-->
+    <!--<string name="server_ip">http://120.26.209.173/%s</string>-->
+    <string name="server_ip">http://www.vjiapei.com/%s</string>
+    <!--&lt;!&ndash;正式服务器接口地址&ndash;&gt;-->
+    <!--<string name="server_ip">http://211.149.209.126/%s</string>-->
+</resources>

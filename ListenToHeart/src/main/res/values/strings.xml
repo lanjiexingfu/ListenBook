@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">随心听</string>
+
+    <!-- 首页tab名字-->
+    <string name="main_tab_name_listen_bar">听吧</string>
+    <string name="main_tab_name_mime">我的</string>
+    <string name="main_tab_name_discover">发现</string>
+    <string name="main_tab_name_account">账号</string>
+
+</resources>

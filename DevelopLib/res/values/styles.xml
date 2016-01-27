@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <style name="ActivityAnimationStyle" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_out</item>
+    </style>
+
+    <style name="CalendarTheme">
+        <item name="calendarViewStyle">@style/CalendarStyle</item>
+    </style>
+
+    <style name="CalendarStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+
+    <style name="rtl_RecyclerTabLayout">
+        <item name="rtl_tabMinWidth">72dp</item>
+        <item name="rtl_tabMaxWidth">264dp</item>
+        <item name="rtl_tabIndicatorColor">@color/accent</item>
+        <item name="rtl_tabIndicatorHeight">2dp</item>
+        <item name="rtl_tabPaddingStart">12dp</item>
+        <item name="rtl_tabPaddingEnd">12dp</item>
+        <item name="rtl_tabBackground">?attr/selectableItemBackground</item>
+        <item name="rtl_tabTextAppearance">@style/rtl_RecyclerTabLayout.Tab</item>
+        <item name="rtl_tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="rtl_RecyclerTabLayout.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <declare-styleable name="CustomSlidingTabIndicator">
+        <attr name="STIindicatorColor" format="color" />
+        <attr name="STIunderlineColor" format="color" />
+        <attr name="STIdividerColor" format="color" />
+        <attr name="STItextColor" format="color"/>
+        <attr name="STIindicatorHeight" format="dimension" />
+        <attr name="STIunderlineHeight" format="dimension" />
+        <attr name="STIdividersPadding" format="dimension" />
+        <attr name="STItabLeftRightPadding" format="dimension" />
+        <attr name="STIscrollOffSet" format="dimension" />
+        <attr name="STItabTextSize" format="dimension" />
+        <attr name="STItabBackground" format="reference" />
+        <attr name="STIshouldExpand" format="boolean" />
+        <attr name="STItextCaps" format="boolean" />
+        <attr name="STItabTopBtmPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor" format="color"/>
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="tabBackgroundTextViewId" format="reference"/>
+    </declare-styleable>
+
+</resources>

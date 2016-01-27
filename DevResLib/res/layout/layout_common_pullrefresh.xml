@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lib.ab.view.pullview.AbPullToRefreshView
+    android:id="@+id/pull_refresh_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/gray_line"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="false"
+        android:listSelector="@drawable/bg_list_item_selector"
+        android:scrollbarFadeDuration="0"
+        android:scrollbars="none"/>
+
+</com.lib.ab.view.pullview.AbPullToRefreshView>

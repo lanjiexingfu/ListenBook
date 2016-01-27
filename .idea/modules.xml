@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DevResLib/DevResLib.iml" filepath="$PROJECT_DIR$/DevResLib/DevResLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DevelopLib/DevelopLib.iml" filepath="$PROJECT_DIR$/DevelopLib/DevelopLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListenBook.iml" filepath="$PROJECT_DIR$/ListenBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListenToHeart/ListenToHeart.iml" filepath="$PROJECT_DIR$/ListenToHeart/ListenToHeart.iml" />
+    </modules>
+  </component>
+</project>

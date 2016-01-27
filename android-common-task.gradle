@@ -1,0 +1,57 @@
+android.applicationVariants.all { variant ->
+//    variant.mergeResources.doFirst {
+//        if (project.ext.has(variant.productFlavors.name)) {
+//            if (project.ext[variant.productFlavors.name].debugRes != null) {
+//                android.sourceSets.debug.res.srcDirs = project.ext[variant.productFlavors.name].debugRes
+//            } else {
+//                android.sourceSets.debug.res.srcDirs = ['debug/res']
+//            }
+//
+//            if (project.ext[variant.productFlavors.name].releaseRes != null) {
+//                android.sourceSets.release.res.srcDirs = project.ext[variant.productFlavors.name].releaseRes
+//            } else {
+//                android.sourceSets.release.res.srcDirs = ['release/res']
+//            }
+//        } else {
+//            android.sourceSets.debug.res.srcDirs = ['debug/res']
+//            android.sourceSets.release.res.srcDirs = ['release/res']
+//        }
+//    }
+
+    // launch after install
+    if (variant.install != null) {
+        variant.install.doLast {
+            start_apk(variant)
+        }
+    }
+
+    variant.assemble.doLast {
+        rename_and_moveout_apk(variant)
+    }
+}
+
+def start_apk(targetVariant) {
+    def packageSuffix = targetVariant.buildType.applicationIdSuffix ? targetVariant.buildType.applicationIdSuffix : ""
+    def packageName = targetVariant.productFlavors.applicationId[0] ? targetVariant.productFlavors.applicationId[0] : android.defaultConfig.applicationId
+    def startupClass = packageName + packageSuffix + '/' + project.ext.appStartupClassName
+    exec {
+        executable = 'adb'
+        args = ['shell', 'am', 'start', '-c', 'android.intent.category.LAUNCHER', '-n', startupClass]
+    }
+}
+
+def rename_and_moveout_apk(targetVariant) {
+    // replace output apk name to <product>-<version>-<buildtype>-<githash>.apk
+    def versionSuffix = targetVariant.buildType.versionNameSuffix ? targetVariant.buildType.versionNameSuffix : ""
+    def versionName = targetVariant.mergedFlavor.versionName + versionSuffix;
+
+    targetVariant.outputs.each { output->
+        def apkProcess = output.getOutputFile();
+        def apkProcessNewName = apkProcess.name.replace(targetVariant.name, versionName);
+        copy {
+            from "$apkProcess"
+            into "$rootProject.projectDir/out"
+            rename ("$apkProcess.name", "$apkProcessNewName")
+        }
+    }
+}

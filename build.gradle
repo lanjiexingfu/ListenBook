@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    }
+}
+
+ext{
+    minSdkVersion = 9
+    compileSdkVersion = 22
+    targetSdkVersion = compileSdkVersion
+    buildToolsVersion = '22.0.1'
+    javaVersion = JavaVersion.VERSION_1_7
+    keyAlias = 'ListenToHeart'
+    keyPassword = 'ajie705624'
+    storeFile = '../ListenToHeart_key.jks'
+    storePassword = 'ajie705624'
+    VERSION_NAME = '1.1.0'
+    AAVersion = '3.3.2' // change this to your desired version, for example the latest stable: 3.3.2
+}
+
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
