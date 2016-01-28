@@ -11,7 +11,10 @@ import com.lib.base.app.view.BusinessActivity;
 import com.lib.base.app.view.DelegateFragment;
 import com.lib.base.utils.AppUtil;
 import com.lib.base.utils.ToastUtil;
+import com.listen.fragment.EnssenceFragment;
+import com.listen.fragment.HotFragment;
 import com.listen.fragment.ListenBarFragment;
+import com.listen.fragment.RecommendFragment;
 
 /**
  * Created by Chiely on 15/6/18.
@@ -35,9 +38,9 @@ public class MainActivity extends BusinessActivity{
 
     private static Class<DelegateFragment>[] fClzs = new Class[]{
             ListenBarFragment.class,
-            ListenBarFragment.class,
-            ListenBarFragment.class,
-            ListenBarFragment.class
+            RecommendFragment.class,
+            HotFragment.class,
+            EnssenceFragment.class
     };
 
     private DelegateFragment[] fragments = new DelegateFragment[fClzs.length];

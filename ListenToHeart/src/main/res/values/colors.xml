@@ -9,4 +9,6 @@
      <color name="tab_font_selected">#f39f19</color>
      <color name="tab_font_no_selected">#626262</color>
 
+     <color name="background_tab_pressed">#8833B5E5</color>
+
 </resources>
