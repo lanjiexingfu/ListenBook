@@ -1,4 +1,4 @@
-package com.listen.fragment;
+﻿package com.listen.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -27,7 +27,7 @@ public class ListenBarFragment extends BusinessFragment {
     HotFragment hotFragment;
     EnssenceFragment enssenceFragment;
 
-    String[] titles = { "推荐", "热门", "精华" };
+    String[] titles = { "推荐", "热门", "精华1" };
 
     @Nullable
     @Override
