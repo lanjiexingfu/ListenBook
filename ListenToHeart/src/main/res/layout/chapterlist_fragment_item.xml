@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/chapter_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="第01集"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_l"
+        />
+
+    <TextView
+        android:id="@+id/chapter_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10M"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/text_size_m"
+        android:layout_marginRight="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/download_icon"
+        />
+</LinearLayout>

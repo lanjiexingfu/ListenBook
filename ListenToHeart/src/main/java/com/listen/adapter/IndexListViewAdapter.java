@@ -1,6 +1,8 @@
 package com.listen.adapter;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -16,10 +18,13 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.lib.base.FinalBitmap;
+import com.lib.base.app.Configure;
 import com.lib.base.utils.CheckUtils;
 import com.lib.base.utils.DisplayUtils;
 import com.lib.ext.widget.focuspicture.autoscrollviewpager.AutoScrollViewPager;
 import com.lib.ext.widget.focuspicture.autoscrollviewpager.InfiniteLoopViewPagerAdapter;
+import com.listen.activity.BookDetailActivity;
+import com.listen.activity.MoreActivity;
 import com.listen.activity.R;
 import com.listen.model.bean.IndexBookCategoryBean;
 import com.listen.widget.HorizontalListView;
@@ -29,7 +34,7 @@ import java.util.List;
 
 public class IndexListViewAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
-    private Activity context;
+    private Context context;
     private List<IndexBookCategoryBean> list;
     private FinalBitmap finalImageLoader;
     private AutoScrollViewPager autoScrollViewPager;
@@ -39,7 +44,7 @@ public class IndexListViewAdapter extends BaseAdapter {
     private int wh;
     private View mTopView;
 
-    public IndexListViewAdapter(Activity context, List<IndexBookCategoryBean> list) {
+    public IndexListViewAdapter(Context context, List<IndexBookCategoryBean> list) {
         super();
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
@@ -75,7 +80,7 @@ public class IndexListViewAdapter extends BaseAdapter {
             bookCategoryMoreIV.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.e("!!!!!!!!!!!!!!!!!!", "123132131211321232");
+                    context.startActivity(new Intent(context, MoreActivity.class));
                 }
             });
             HorizontalListView horizontalListView = (HorizontalListView) convertView.findViewById(R.id.horizon_listview);//图片
@@ -121,7 +126,7 @@ public class IndexListViewAdapter extends BaseAdapter {
             horizontalListView.setOnItemClickListener(new OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Log.e("!!!!!!!!!!!!!!!!!!", position + "");
+                    context.startActivity(new Intent(context, BookDetailActivity.class));
                 }
             });
         }

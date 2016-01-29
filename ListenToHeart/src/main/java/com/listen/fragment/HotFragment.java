@@ -1,6 +1,7 @@
 package com.listen.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.NonNull;
@@ -8,11 +9,13 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import com.lib.ab.view.pullview.AbPullToRefreshView;
 import com.lib.base.adapter.UniversalAdapter;
 import com.lib.base.adapter.UniversalViewHolder;
 import com.lib.base.app.view.BusinessFragment;
+import com.listen.activity.BookDetailActivity;
 import com.listen.activity.R;
 import com.listen.model.bean.BookBean;
 
@@ -64,6 +67,13 @@ public class HotFragment extends BusinessFragment implements AbPullToRefreshView
                 viewHolder.setText(R.id.book_name, "盗墓笔记(全)");
                 viewHolder.setText(R.id.book_author, "陈立乔");
                 viewHolder.setText(R.id.book_intro,"五十年前，一群长沙土夫子（盗墓贼）挖到一部战国帛书，残篇中记载了一座奇特的战国古墓的位置，但那群土夫子在地下碰上了诡异事件，几乎全部身亡。");
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                startActivity(new Intent(getActivity(), BookDetailActivity.class));
             }
         });
     }

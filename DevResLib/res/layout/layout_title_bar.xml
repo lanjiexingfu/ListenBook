@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:scaleType="centerInside"
-            android:src="@drawable/icon_back"/>
+            android:src="@drawable/ic_back_normal"/>
 
         <TextView
             android:id="@+id/title_bar_left_text"

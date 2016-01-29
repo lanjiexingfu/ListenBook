@@ -53,4 +53,7 @@
     <!--title背景色-->
     <color name="title_green_bg">#25bfa0</color>
 
+    <!--divider block bg-->
+    <color name="divider_block_bg">#efefef</color>
+
 </resources>
